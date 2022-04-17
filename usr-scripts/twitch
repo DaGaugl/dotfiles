@@ -1,0 +1,9 @@
+#!/bin/sh
+CYAN='\033[0;36m'
+COLOR_OFF='\033[0m'
+
+echo -e "${CYAN}Which stream do you want to watch?${COLOR_OFF}"
+
+read streamer
+
+exec streamlink twitch.tv/$streamer best --player mpv --twitch-low-latency --twitch-disable-ads --hls-live-edge 1 --hls-segment-threads 2 --title {title}

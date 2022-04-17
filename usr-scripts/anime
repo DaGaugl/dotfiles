@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo -e "Which Anime?"
+
+read anime
+
+exec streamlink $anime best
