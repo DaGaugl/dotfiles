@@ -15,7 +15,7 @@ export ZSH="/home/christian/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="dracula" # set by `omz`
 
 
 # Set list of themes to pick from when loading at random
@@ -83,7 +83,9 @@ plugins=(
 	zsh-autosuggestions
 	zsh-vi-mode
 	themes
-	zsh-syntax-highlighting zsh-navigation-tools emacs)
+    zsh-navigation-tools
+    emacs
+    zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,14 +115,29 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-neofetch
+### COLORED MANPAGES ###
+export LESS_TERMCAP_mb=$'\E[01;31m'             # begin blinking
+export LESS_TERMCAP_md=$'\E[01;31m'             # begin bold
+export LESS_TERMCAP_me=$'\E[0m'                 # end mode
+export LESS_TERMCAP_se=$'\E[0m'                 # end standout-mode
+export LESS_TERMCAP_so=$'\E[01;44;33m'          # begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\E[0m'                 # end underline
+export LESS_TERMCAP_us=$'\E[01;32m'             # begin underline
+#export MANPAGER="/usr/bin/most -s"             # color using most
+
+neofetch --source ~/Dokumente/dank.txt
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias yay="paru"
-alias peepohappy="sudo pacman -Syu && yay -Syu && exit"
+alias peepohappy="sudo manga-cli -u && sudo ani-cli -U && sudo pacman -Syu && yay -Syu && exit"
 alias ls="ls -la --color"
 alias jelly="sudo chmod 755 -R /run/media/christian/ && sudo chown jellyfin:jellyfin /run/media/christian/"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias transde="trans de:en"
+alias :q="exit"
+alias pagman="pacman"
 
 export PATH=$PATH:~/.local/bin
