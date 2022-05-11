@@ -6,4 +6,4 @@ echo -e "${CYAN}Which stream do you want to watch?${COLOR_OFF}"
 
 read streamer
 
-exec streamlink twitch.tv/$streamer best --player mpv --twitch-low-latency --twitch-disable-ads --hls-live-edge 1 --hls-segment-threads 2 --title {title}
+exec streamlink twitch.tv/$streamer best
