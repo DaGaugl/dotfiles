@@ -13,14 +13,14 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.9
+  opacity: 0.8
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-   columns: 104
-   lines: 31
+   columns: 70
+   lines: 21
 
   # Window position (changes require restart)
   #
@@ -301,7 +301,7 @@ live_config_reload: true
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /usr/bin/zsh
+  program: /usr/bin/fish
   args:
     - --login
 
