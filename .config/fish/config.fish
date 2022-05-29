@@ -2,7 +2,7 @@ set TERM "xterm-256color"
 set EDITOR "emacsclient -t"
 set VISUAL "emacsclient -c -a emacs"
 fish_vi_key_bindings
-set fish_cursor_default block
+set fish_cursor_default line
 set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
@@ -18,7 +18,7 @@ end
 
 ### ALIASES ###
 alias yay="paru"
-alias pagman="sudo manga-cli -u && sudo ani-cli -U && yay && exit"
+alias pagman="doas manga-cli -u && doas ani-cli -U && sudo pacman -Syu && paru && exit"
 alias ls="exa -la"
 alias cp="cp -iv"
 alias mv="mv -iv"
@@ -28,6 +28,9 @@ alias urban="udict"
 alias te="emacsclient -t"
 alias :q="exit"
 alias rmorphans="sudo pacman -Rns $(pacman -Qtdq)"
+alias sudo="doas"
+alias vpn="nordvpn"
+alias monkeytype="typioca"
 
 ### COLORED MANPAGES ###
 function configure_pager
