@@ -33,7 +33,7 @@ ZSH_THEME="dracula" # set by `omz`
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+ zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -125,19 +125,25 @@ export LESS_TERMCAP_ue=$'\E[0m'                 # end underline
 export LESS_TERMCAP_us=$'\E[01;32m'             # begin underline
 #export MANPAGER="/usr/bin/most -s"             # color using most
 
-neofetch --source ~/Dokumente/dank.txt
+### PFETCH VARS ###
+export PF_INFO="ascii title os kernel shell uptime pkgs memory"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+pfetch
+
 
 alias yay="paru"
-alias peepohappy="sudo manga-cli -u && sudo ani-cli -U && sudo pacman -Syu && yay -Syu && exit"
-alias ls="ls -la --color"
+alias pagman="sudo manga-cli -u && sudo ani-cli -U && sudo pacman -Syu && yay -Syu && exit"
+alias ls="exa -la"
 alias jelly="sudo chmod 755 -R /run/media/christian/ && sudo chown jellyfin:jellyfin /run/media/christian/"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias transde="trans de:en"
 alias :q="exit"
-alias pagman="pacman"
+alias rmorphans="sudo pacman -Rns $(pacman -Qtdq)"
+alias trans="trans :de"
+alias urban="udict"
 
 export PATH=$PATH:~/.local/bin
+
+### STARSHIP PROMPT ###
+eval "$(starship init zsh)"

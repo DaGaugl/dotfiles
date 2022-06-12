@@ -19,7 +19,7 @@ end
 ### ALIASES ###
 alias yay="paru"
 alias pagman="doas manga-cli -u && doas ani-cli -U && sudo pacman -Syu && paru && exit"
-alias ls="exa -la"
+alias ls="exa -la --icons"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias transde="trans de:en"
@@ -31,6 +31,8 @@ alias rmorphans="sudo pacman -Rns $(pacman -Qtdq)"
 alias sudo="doas"
 alias vpn="nordvpn"
 alias monkeytype="typioca"
+alias rm="rm -i"
+alias z="zathura"
 
 ### COLORED MANPAGES ###
 function configure_pager
