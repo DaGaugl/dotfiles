@@ -1,5 +1,4 @@
 #+TITLE: If you read this
 #+AUTHOR: DaGaugl
-* YOYOYOYO
-** just some scuffed dotfiles, nothing interesting
+* just some scuffed dotfiles, nothing interesting
 please let me know if you find any passwords in these files LULE
