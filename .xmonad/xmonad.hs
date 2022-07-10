@@ -7,6 +7,7 @@ import XMonad.Util.SpawnOnce
 import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat)
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Fullscreen
+import XMonad.Actions.NoBorders
 
 import qualified XMonad.StackSet as W -- to shift and float windows
 import qualified Data.Map        as M
@@ -29,10 +30,11 @@ main = xmonad $ kde4Config
              [ ("M-p", spawn "passmenu")
              , ("M-k", spawn "kpl")
              , ("M-x", kill )
-             , ("M-e", spawn "pcmanfm")
+             , ("M-e", spawn "dolphin")
              , ("M-S-e", spawn "emacsclient -c -a emacs")
              , ("M-S-m", spawn "rofi -show emoji")
-             , ("M-v", spawn "rofi-nordvpn")]
+             , ("M-v", spawn "rofi-nordvpn")
+	     , ("M-S-b", withFocused toggleBorder) ] 
 
 
 myManageHook = composeAll . concat $
@@ -53,8 +55,8 @@ myManageHook = composeAll . concat $
 
 
 myStartupHook = do
-  spawnOnce "picom -b --config ~/.config/picom/picom.conf &"
+  spawnOnce "picom -b --config ~/.config/picom/picom.conf"
   spawnOnce "unclutter"
-  spawnOnce "dunst &"
-  spawn "kill polybar"
-  spawnOnce "polybar &"
+  spawnOnce "dunst"
+  spawnOnce "polybar"
+  spawnOnce "alttab -w 0"
