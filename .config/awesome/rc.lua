@@ -45,8 +45,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-
+--beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init("~/.config/awesome/theme.lua")
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 editor = os.getenv("EDITOR") or "nvim"
@@ -281,9 +281,9 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
 
-    awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
+    awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.02)          end,
               {description = "increase master width factor", group = "layout"}),
-    awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
+    awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.02)          end,
               {description = "decrease master width factor", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = "increase the number of master clients", group = "layout"}),
@@ -312,7 +312,7 @@ globalkeys = gears.table.join(
 
     -- Prompt
     awful.key({ modkey },            "r",     function ()
-    awful.util.spawn("rofi -show run") end,
+    awful.util.spawn("rofi -show drun -show-icons -icon-theme inverse") end,
               {description = "run rofi", group = "launcher"}),
 
     -- firefox
@@ -522,6 +522,14 @@ awful.rules.rules = {
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
+    { rule = { class = "Chatterino 7.3.5 - dagaugi" },
+      properties = { screen = 0 } },
+
+    { rule = { class = "Spotify" },
+      properties = { screen = 0 } },
+
+    { rule = { class = "Mailspring" },
+      properties = { tag = "3" }, },
 }
 -- }}}
 
@@ -588,12 +596,14 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- autostart
 awful.spawn.with_shell("xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 2560x455 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --rate 164.80 --pos 0x0 --rotate normal --output DP-5 --off")
+awful.spawn.with_shell("killall volumeicon")
 awful.spawn.with_shell("picom")
-awful.spawn.with_shell("spotify", {screen = 0})
-awful.spawn.with_shell("chatterino", {screen = 0})
-awful.spawn.with_shell("volumeicon")
+awful.spawn.with_shell("spotify")
+awful.spawn.with_shell("chatterino")
+awful.spawn.with_shell("sleep 2 && volumeicon")
 awful.spawn.with_shell("dunst")
-awful.spawn.with_shell("mailspring", { tag = "3" })
+awful.spawn.with_shell("mailspring")
 awful.spawn.with_shell("alttab -w 1 -d 1")
 awful.spawn.with_shell("/usr/bin/emacs --daemon")
 awful.spawn.with_shell("nitrogen --restore")
+--awful.spawn.with_shell("feh --bg-fill /usr/share/backgrounds/catppuccin-wallpapers/os/artix-black-4k.png")
