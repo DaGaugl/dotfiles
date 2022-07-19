@@ -522,8 +522,8 @@ awful.rules.rules = {
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
-    { rule = { class = "Chatterino 7.3.5 - dagaugi" },
-      properties = { screen = 0 } },
+    --{ rule = { class = "chatterino" },
+     -- properties = { screen = 0 } },
 
     { rule = { class = "Spotify" },
       properties = { screen = 0 } },
@@ -593,9 +593,10 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-
 -- autostart
 awful.spawn.with_shell("xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 2560x455 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --rate 164.80 --pos 0x0 --rotate normal --output DP-5 --off")
+awful.spawn.with_shell("polkit-dumb-agent")
+awful.spawn.with_shell("pulseaudio")
 awful.spawn.with_shell("killall volumeicon")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("spotify")
@@ -607,3 +608,4 @@ awful.spawn.with_shell("alttab -w 1 -d 1")
 awful.spawn.with_shell("/usr/bin/emacs --daemon")
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("unclutter")

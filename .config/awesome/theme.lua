@@ -29,6 +29,8 @@ theme.border_width  = dpi(2)
 theme.border_normal = "#282938"
 theme.border_focus  = "#dddddd"
 theme.border_marked = "#91231c"
+theme.border_singe_client = false
+theme.gap_single_client = false
 
 -- There are other variable sets
 -- overriding the default one when
