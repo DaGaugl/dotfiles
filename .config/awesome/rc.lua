@@ -348,7 +348,16 @@ globalkeys = gears.table.join(
     -- nordvpn
     awful.key({ modkey },       "v",        function()
     awful.util.spawn("rofi-nordvpn") end,
-            {description = "nordvpn", group = "launcher"})
+            {description = "nordvpn", group = "launcher"}),
+
+    -- flameshot
+    awful.key({ modkey, "Shift" },	"s",	  function()
+    awful.util.spawn("flameshot gui --clipboard") end,
+    	    {description = "take a screenshot", group = "client"}),
+
+    awful.key({ modkey, "Control" }, "x", function()
+    awful.util.spawn("xkill") end,
+            {description = "click on window to kill", group = "client"})
 
 
 )
@@ -606,6 +615,6 @@ awful.spawn.with_shell("dunst")
 awful.spawn.with_shell("mailspring")
 awful.spawn.with_shell("alttab -w 1 -d 1")
 awful.spawn.with_shell("/usr/bin/emacs --daemon")
-awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("unclutter")
+awful.spawn.with_shell("ckb-next")
