@@ -1,5 +1,5 @@
 set TERM "xterm-256color"
-set EDITOR "emacsclient -t"
+set EDITOR "emacs -nw"
 set VISUAL "emacsclient -c -a emacs"
 fish_vi_key_bindings
 set fish_cursor_default line
@@ -12,27 +12,24 @@ eval "$(starship init fish)"
 
 ### CUSTOM STARTUP COMMAND ###
 function fish_greeting
-         pfetch
+         sysfex
          configure_pager
 end
 
 ### ALIASES ###
-alias yay="paru"
-alias pagman="sudo manga-cli -u && sudo pacman -Syu && paru && exit"
+alias pagman="paru && protonup && exit"
 alias ls="exa -la --icons"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias transde="trans de:en"
 alias trans="trans :de"
 alias urban="udict"
-alias te="emacsclient -t"
+alias te="emacs -nw"
 alias :q="exit"
-alias sudo="doas"
 alias vpn="nordvpn"
 alias monkeytype="typioca"
 alias rm="rm -i"
 alias z="zathura"
-alias yt="ytfzf -t"
 
 ### COLORED MANPAGES ###
 function configure_pager

@@ -4,3 +4,4 @@ twitch-disable-ads
 hls-live-edge 1
 hls-segment-threads 2
 title {title}
+twitch-proxy-playlist=https://lb-eu.cdn-perfprod.com

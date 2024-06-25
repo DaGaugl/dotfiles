@@ -169,7 +169,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag({ "WEB", "DC", "MAIL", "4", "5", "6", "7", "8", "GAME" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -330,10 +330,10 @@ globalkeys = gears.table.join(
     awful.util.spawn("kpl") end,
               {description = "kappa launcher", group = "launcher"}),
 
-    -- passmenu
+    -- bitwarden
     awful.key({ modkey },       "p",        function ()
-    awful.util.spawn("passmenu") end,
-            {description = "passmenu", group = "launcher"}),
+    awful.util.spawn("rofi-rbw") end,
+            {description = "password manager", group = "launcher"}),
 
     -- pcmanfm
     awful.key({ modkey },       "e",        function()
@@ -357,9 +357,12 @@ globalkeys = gears.table.join(
 
     awful.key({ modkey, "Control" }, "x", function()
     awful.util.spawn("xkill") end,
-            {description = "click on window to kill", group = "client"})
+            {description = "click on window to kill", group = "client"}),
 
-
+    -- standby
+    awful.key({ modkey, "Control" }, "s", function()
+    awful.util.spawn("systemctl suspend") end,
+            {description = "standby mode", group = "client"})
 )
 
 clientkeys = gears.table.join(
@@ -535,9 +538,9 @@ awful.rules.rules = {
      -- properties = { screen = 0 } },
 
     { rule = { class = "Spotify" },
-      properties = { screen = 0 } },
+      properties = { screen = 1 } },
 
-    { rule = { class = "Mailspring" },
+    { rule = { class = "Thunderbird" },
       properties = { tag = "3" }, },
 }
 -- }}}
@@ -604,15 +607,14 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- autostart
 awful.spawn.with_shell("xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 2560x455 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --rate 164.80 --pos 0x0 --rotate normal --output DP-5 --off")
-awful.spawn.with_shell("polkit-dumb-agent")
-awful.spawn.with_shell("pulseaudio")
+awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 awful.spawn.with_shell("killall volumeicon")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("spotify")
 awful.spawn.with_shell("chatterino")
 awful.spawn.with_shell("sleep 2 && volumeicon")
 awful.spawn.with_shell("dunst")
-awful.spawn.with_shell("mailspring")
+awful.spawn.with_shell("thunderbird")
 awful.spawn.with_shell("alttab -w 1 -d 1")
 awful.spawn.with_shell("/usr/bin/emacs --daemon")
 awful.spawn.with_shell("nm-applet")
