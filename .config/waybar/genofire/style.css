@@ -1,14 +1,13 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "UbuntuMono Nerd Font";
+    font-family: "Ubuntu Nerd Font";
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(20, 0, 40, 0.75);
-	/*filter: blur(50px); */
+    background: transparent;
     color: white;
 }
 
@@ -32,20 +31,6 @@ window#waybar {
 #workspaces button.focused {
     color: #c9545d;
     border-top: 2px solid #c9545d;
-}
-
-#workspaces button.active {
-    color: yellow;
-    border-top: 2px solid yellow; /*You can adjust the border color as needed */
-}
-
-#workspaces button.inactive {
-	color: green;
-}
-
-#workspaces button.current_input {
-      background: #ff0088;
-	  color: green;
 }
 
 #mode {
