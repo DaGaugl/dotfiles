@@ -1,3 +1,18 @@
-//@theme "/home/christian/.local/share/rofi/themes/nord-oneline.rasi"
-//@theme "/home/christian/.local/share/rofi/themes/rounded-nord-dark.rasi"
-@theme "/home/master/Downloads/dotfiles/rofithemes/nord-oneline.rasi"
+configuration{
+    modi: "run,drun,window";
+    icon-theme: "inverse";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 󰕰  Window";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
+}
+
+@theme "catppuccin-mocha"
+
