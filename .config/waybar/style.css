@@ -3,7 +3,7 @@
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, JetBrains Mono Bold, sans-serif;
-    min-height: 20px;
+    min-height: 10px;
 }
 
 window#waybar {
