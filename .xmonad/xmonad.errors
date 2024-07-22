@@ -1,7 +1,0 @@
-
-xmonad.hs:37:1: warning: [-Wtabs]
-    Tab character found here.
-    Please use spaces instead.
-   |
-37 |              , ("M-S-b", withFocused toggleBorder) ] 
-   | ^^^^^^^^
