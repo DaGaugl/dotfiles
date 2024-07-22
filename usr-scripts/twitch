@@ -1,9 +1,0 @@
-#!/bin/sh
-CYAN='\033[0;36m'
-COLOR_OFF='\033[0m'
-
-echo -e "${CYAN}Which stream do you want to watch?${COLOR_OFF}"
-
-read streamer
-
-exec streamlink twitch.tv/$streamer best

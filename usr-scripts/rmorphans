@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec doas pacman -Rns $(pacman -Qtdq)
