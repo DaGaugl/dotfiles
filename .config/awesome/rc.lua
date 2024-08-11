@@ -322,8 +322,8 @@ globalkeys = gears.table.join(
 
     -- emacs
     awful.key({ modkey, "Shift" }, "e",      function ()
-    awful.util.spawn("emacsclient -c -a emacs") end,
-              {description = "emacs", group = "launcher"}),
+    awful.util.spawn("kitty nvim") end,
+              {description = "nvim", group = "launcher"}),
 
     -- kappa launcher
     awful.key({ modkey },       "k",     function ()
@@ -359,10 +359,14 @@ globalkeys = gears.table.join(
     awful.util.spawn("xkill") end,
             {description = "click on window to kill", group = "client"}),
 
-    -- standby
+    
+    awful.key({  },"XF86AudioPlay" , function()
+    awful.util.spawn("playerctl -p spotify play-pause") end,
+            {description = "play/pause spotify", group = "client"}),
+    -- power menu
     awful.key({ modkey, "Control" }, "s", function()
-    awful.util.spawn("systemctl suspend") end,
-            {description = "standby mode", group = "client"})
+    awful.util.spawn("rofi -show power-menu -modi power-menu:rofi-power-menu") end,
+            {description = "rofi power menu", group = "client"})
 )
 
 clientkeys = gears.table.join(
@@ -541,7 +545,7 @@ awful.rules.rules = {
       properties = { screen = 1 } },
 
     { rule = { class = "Thunderbird" },
-      properties = { tag = "3" }, },
+      properties = { tag = "MAIL" }, },
 }
 -- }}}
 
@@ -607,16 +611,15 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- autostart
 awful.spawn.with_shell("xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 2560x455 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --rate 164.80 --pos 0x0 --rotate normal --output DP-5 --off")
-awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+awful.spawn.with_shell("rofi-polkit-agent")
 awful.spawn.with_shell("killall volumeicon")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("spotify")
-awful.spawn.with_shell("chatterino")
+--awful.spawn.with_shell("chatterino")
 awful.spawn.with_shell("sleep 2 && volumeicon")
 awful.spawn.with_shell("dunst")
 awful.spawn.with_shell("thunderbird")
 awful.spawn.with_shell("alttab -w 1 -d 1")
-awful.spawn.with_shell("/usr/bin/emacs --daemon")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("unclutter")
-awful.spawn.with_shell("ckb-next")
+
