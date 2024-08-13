@@ -30,6 +30,6 @@ print "----------- \underline  Hardware\reset -----------"
 print ""
 info "\f_blue\bold  \reset " ram
 info "\f_yellow\bold  \reset " cpu
-info "\f_magenta\bold  \reset " resolution
+#info "\f_magenta\bold  \reset " resolution
 print ""
-#info "" colors_dark
+info "" colors_dark

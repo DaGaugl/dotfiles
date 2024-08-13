@@ -38,5 +38,5 @@ vim.schedule(function()
   require "mappings"
 end)
 
-vim.cmd("set relativenumber")
+vim.cmd("set number")
 require("base46").toggle_transparency()
