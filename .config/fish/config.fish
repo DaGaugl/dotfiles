@@ -16,7 +16,7 @@ function fish_greeting
 end
 
 ### ALIASES ###
-alias pagman="sudo pacman -Syu && paru && protonup && exit"
+alias pagman="sudo pacman -Syu && paru && protonup"
 alias ls="exa -la --icons"
 alias cp="cp -iv"
 alias mv="mv -iv"

@@ -25,7 +25,7 @@ theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(2)
+theme.border_width  = dpi(3)
 theme.border_normal = "#282938"
 theme.border_focus  = "#dddddd"
 theme.border_marked = "#91231c"
@@ -99,7 +99,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "/usr/share/backgrounds/catppuccin-wallpapers/os/arch-black-4k.png"
+theme.wallpaper = "~/.config/hypr/wallpaper.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

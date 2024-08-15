@@ -317,8 +317,8 @@ globalkeys = gears.table.join(
 
     -- firefox
     awful.key({ modkey },            "i",     function ()
-    awful.util.spawn("firefox") end,
-              {description = "firefox", group = "launcher"}),
+    awful.util.spawn("floorp") end,
+              {description = "floorp", group = "launcher"}),
 
     -- emacs
     awful.key({ modkey, "Shift" }, "e",      function ()
@@ -363,6 +363,10 @@ globalkeys = gears.table.join(
     awful.key({  },"XF86AudioPlay" , function()
     awful.util.spawn("playerctl -p spotify play-pause") end,
             {description = "play/pause spotify", group = "client"}),
+
+    awful.key({ modkey }, "a", function()
+    awful.util.spawn("change-audio") end,
+            {description = "change audio output", group = client}),
     -- power menu
     awful.key({ modkey, "Control" }, "s", function()
     awful.util.spawn("rofi -show power-menu -modi power-menu:rofi-power-menu") end,
