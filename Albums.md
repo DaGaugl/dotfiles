@@ -1,0 +1,313 @@
+[Source](https://www.youtube.com/@365DaysofProg/videos)
+- [x]  Gryphon - Gryphon
+- [x] Progres 2 - Dialog S Vesmirem
+- [x] Burst - Lazarus Bird
+- [x] Supertramp - Famous Last Words
+- [x] Strawbs - From the Witchwood
+- [x] Zechs Marquise - Getting Paid
+- [x] Dave Kerzner - New World
+- [x] Oliver Wakeman - The 3 Ages of Magick
+- [x] Genesis - Duke
+- [x] Gazpacho - Tick Tock
+- [x] Between the Buried and Me - The Parallax II: Future Sequence
+- [x] Marillion - Script for a Jester's Tear
+- [ ] Steve Hackett - Please Don't Touch
+- [ ] Aphrodite's Child - 666
+- [ ] Koenjihyakkei - Angherr Shisspa
+- [ ] Kingdom Come - Galactic Zoo Dossier
+- [ ] Second Hand - Death May be Your Santa Claus
+- [ ] Haken - The Mountain
+- [ ] Aragon - Mouse
+- [ ] Kyrie Eleison - The Fountain Beyond the Sunrise
+- [ ] The Mars Volta - Frances the Mute
+- [ ] Hawkwind - Space Ritual (live)
+- [ ] Magma - K.A
+- [ ] Jethro Tull - Stormwatch
+- [ ] Rick Wakeman - The Six Wives of Henry VIII
+- [ ] Sentryturn - Upon a Mess
+- [ ] Caligula's Horse - Bloom
+- [ ] Pulsar - Halloween
+- [ ] Mae - Singularity
+- [ ] PFM - Storia Di Un Minuto
+- [ ] Touch - Touch
+- [ ] Uriah Heep - Demons and Wizards
+- [ ] Catapilla - Catapilla
+- [ ] Egg - The Polite Force
+- [ ] Colosseum - Valentyne Suite
+- [ ] Green Carnation - Light of Day, Day of Darkness
+- [ ] Frank Zappa - Uncle Meat
+- [ ] Supersister - Present from Nancy
+- [ ] Locomotive - We Are Everything You See
+- [ ] Magma - Üdü Wüdü
+- [ ] Blank Manuskript - Krasna Hora
+- [ ] Zingale - Peace
+- [ ] RPWL - Beyond Man and TIme
+- [ ] Jadis - More than Meets the Eye
+- [ ] Cheeto's Magazine - Amazingous
+- [ ] Gryphon - Red Queen to Gryphon
+- [ ] Ramases - Space Hymns
+- [ ] Pendragon - Not of This World
+- [ ] The Pineapple Thief - Dissolution
+- [ ] Matching Mole - Little Red Record
+- [ ] Arena - Pepper's Ghost
+- [ ] Gorguts - Obscura
+- [ ] Barock Project - DETACHMENT
+- [ ] Blossom Toes - If Only for a Moment
+- [ ] Frank Zappa - One SIze Fits All
+- [ ] Hago - Hago
+- [ ] Amon Düül II - Wolf City
+- [ ] Riverside - Anno Domini High Definition
+- [ ] Bruford Levin Upper Extremities - B.L.U.E. Nights
+- [ ] Sven Grüngberg Proge-Rock Group - Mess
+- [ ] Porcupine Tree - Deadwing
+- [ ] Infringement - Alienism
+- [ ] Soulsplitter - Salutogenesis
+- [ ] King Crimson - THRAK
+- [ ] Renaissance - Illusion
+- [ ] King Crimson - Three of a Perfect Pair
+- [ ] Spock's Bear - V
+- [ ] Jadis - Photoplay
+- [ ] Verbal Delirium - The Imprisoned Words of Fear
+- [ ] Kevin Ayers - Joy of A Toy
+- [ ] IZZ - The Darkened Room
+- [ ] Marillion - An Hour Before It's Dark
+- [ ] Nucleus - We'll Talk About It Later
+- [ ] Abrax - Crying of the Whales
+- [ ] Soft Machine - Bundles
+- [ ] Thank You Scientist - Stranger Heads Prevail
+- [ ] Cailyn Lloyd - Voyager
+- [ ] Yes - Big Generator
+- [ ] Voyager IV - Pictures at an Exhibition
+- [ ] FM - Black Noise
+- [ ] Beyond Twilight - For the Love of Art and the Making
+- [ ] Mahavishnu Orchesta - The Inner Mounting Flame
+- [ ] Jadis - Fanatic
+- [ ] Richard Wright - Wet Dream
+- [ ] Rush - Signals
+- [ ] Symphony X - V: The New Mythology Suite
+- [ ] The Alan Parsons Project - The Turn of A Friendly Card
+- [ ] Grobschnitt - Rockpommel's Land
+- [ ] Miles David - Bitches Brew
+- [ ] Moon Safari - Himlabacken Vol. 1
+- [ ] Bacamarte - Depois do Fim
+- [ ] Agusa - Högtid
+- [ ] Curved Air - Air Conditioning
+- [ ] Ange - Au-Dela du Delire
+- [ ] Traumhaus - In Oculis Meis
+- [ ] Buckethead - Albino Slug
+- [ ] Magma - Mëkanik Dëstruktiw Kömmandöh
+- [ ] Arch Echo - You Won't Believe What Happens Next
+- [ ] The Moody Blues - To Our Children's Children's Children
+- [ ] Kultivator - Brandomens Stigar
+- [ ] Haken - Virus
+- [ ] Nektar - A Tab in the Ocean
+- [ ] Soen - Lotus
+- [ ] Eskaton - 4 Visions
+- [ ] Czeslaw Niemen - Enigmatic
+- [ ] Renaissance - Renaissance
+- [ ] Ruins - Hyderomastgroningem
+- [ ] Focus - Hamburger Concerto
+- [ ] Ambrosia - Ambrosia
+- [ ] Arena - Contagion
+- [ ] Steve Rothery - The Ghosts of Pripyat
+- [ ] Crack the Sky - Crack the Sky
+- [ ] Curved Air - Phantasmagoria
+- [ ] Anyone's Daughter - Adonis
+- [ ] SIlv - Demiere Luniere Avant La Nuit
+- [ ] Robert Wyatt - Rock Bottom
+- [ ] The Tea Club - If / When
+- [ ] Cressida - Asylum
+- [ ] Apple - An Apple A Day
+- [ ] Freedom to Glide - Fall
+- [ ] Asia - Crossing the Line
+- [ ] Atmosphera - Lady of Shalott
+- [ ] Jan Dukes de Grey - Mice and Rats in the Loft
+- [ ] Acqua Fragile - Mass-Media Stars
+- [ ] Wobbler - From Silence to Somewhere
+- [ ] Renaissance - Novella
+- [ ] Rivers of Nihil - Where Owls Know My Name
+- [ ] Rush - Permanent Waves
+- [ ] Earth & Fire - Song of the Marching Children
+- [ ] Big Big Train ft. Notes Reviews - English Electric: Full Power
+- [ ] Twenty Sixty Six and Then - Reflections of the Future
+- [ ] Marsupilami - Arena
+- [ ] Tonton Macoute - Tonton Macoute
+- [ ] Riverside - Love, Fear and the Time Machine
+- [ ] Chris Squire - Fish out of Water
+- [ ] Brand X - Unorthodox Behaviour
+- [ ] Bent Knee - Land Animal
+- [ ] Bjørn Riis - A Storm is Coming
+- [ ] New Trolls - Concerto Grosso per i New Trolls
+- [ ] Jethro Tull - This Was
+- [ ] Uriah Heep - The Magician's Birthday
+- [ ] Anubis - A Tower of SIlence
+- [ ] Steven Wilson - Hand, Cannot, Erase.
+- [ ] Anima Mundi - Insomnia
+- [ ] Saimaa - Matka Mielen Ytimeen
+- [ ] Stormy Six - Un biglietto dei tram
+- [ ] Comus - First Utterance
+- [ ] Rick Wakeman - Journey to the Centre of the Earth
+- [ ] Sven Grünberg - Hingus
+- [ ] Cathedral - Stained Glass Stories
+- [ ] The Gun - Gun
+- [ ] Shlomo Gronich - Cotton Candy
+- [ ] Blue Effect - Meditace
+- [ ] Birds and Buildings - Bantam to Behemoth
+- [ ] Emerson, Lake and Palmer - Love Beach
+- [ ] Mike Oldfield - Crisis
+- [ ] Devin Townsend - Terria
+- [ ] Magic Pie - The Suffering Joy
+- [ ] Caravan - For Girls Who Grow Plump in the Night
+- [ ] Albert Marcœur - Albert Marcœur
+- [ ] Jethro Tull - Stand Up
+- [ ] Harmonium - Si on avait besoin d'une cinquieme saison
+- [ ] Phideaux - Doomsday Afternoon
+- [ ] Ahmed Malek - Habibi Funk 003
+- [ ] Maudlin of the Well - Part the Second
+- [ ] Beardfish - +4626 COMFORTZONE
+- [ ] Yoni Rechter & Avner Kenner - Fourteen Octaves
+- [ ] Hypno5e - Les Ombres Errantes
+- [ ] Wishbone Ash - Argus
+- [ ] Catapilla - Changes
+- [ ] Ikarus - Ikarus
+- [ ] Änglagård - Hybris
+- [ ] Bubu - Anabelas
+- [ ] Cressida - Cressida
+- [ ] Letrous - Bilateral
+- [ ] Pure Reason Revolution - Above Cirrus
+- [ ] Picchio dal Pozzo - Picchio dal Pozzo
+- [ ] Between the Buried and Me - Colors
+- [ ] Happy the Man - Crafty Hands
+- [ ] Frank Zappa - Lumpy Gravy
+- [ ] Stick Men - Deep
+- [ ] All Traps on Earth - A Drop of Light
+- [ ] Eloy - Ocean
+- [ ] Ad Maiora - Ad Maiora!
+- [ ] Castle Canyon - Gods of 1973
+- [ ] Muse - Black Holes and Revelations
+- [ ] The Flower King - Unfold the Future
+- [ ] IQ - The Seventh House
+- [ ] Strawbs - Grave New World
+- [ ] PLUS 33 - Open WIndow
+- [ ] The Catch - Excuses for Kings
+- [ ] Porcupine Tree - Up the Downstair
+- [ ] Gnidrolog - Lady Lake
+- [ ] TATRAN - Shvat
+- [ ] The Moody Blues - In Search of the Lost Chord
+- [ ] Coheed and Cambria - In Keeping Secrets of Silent Earth: 3
+- [ ] Heldon - Stand By
+- [ ] Spirogyra - St. Radigunds
+- [ ] Iron Butterfly - In-a-Gadda-Da-Vida
+- [ ] Gavin Harrison - Circles
+- [ ] Clearlight - Forever Blowing Bubbles
+- [ ] Steve Hillage - Fish Rising
+- [ ] Proyecto Antimateria - Nomeacuerdo
+- [ ] Gösta Berlings Saga - Detta har Hänt
+- [ ] Kaipa - Inget nytt under solen
+- [ ] King Crimson - Starless and Bible Black
+- [ ] Camel - Rajaz
+- [ ] U.K. - Danger Money
+- [ ] Marillion - Clutching the Straws
+- [ ] Henry Cow - Legend
+- [ ] U.K. - U.K.
+- [ ] Jethro Tull - Heavy Horses
+- [ ] Starcastle - Starcastle
+- [ ] Locanda Delle Fate - Forse le lucciole non si amano più
+- [ ] Echolyn - I Heard You Listening
+- [ ] Pain of Salvation - The Perfect Element Pt. 1
+- [ ] Far East Family Band - Parallel World
+- [ ] Jethro Tull - Benefit
+- [ ] 801 - 801 Live
+- [ ] Echolyn - mei
+- [ ] Matching Mole - Matching Mole
+- [ ] Porcupine Tree - Fear of a Blank Planet
+- [ ] Subterranean Masquerade - Mountain Fever
+- [ ] Hypnos 69 - Legacy
+- [ ] Brian Auger's Oblivion Express - A Better Land
+- [ ] Pavlov's Dog - At the Sound of the bell
+- [ ] Genesis - A Trick of the Tail
+- [ ] Tiger Moth Tales - Story Tellers - Part Two
+- [ ] After All - After All
+- [ ] Sheshet - Sheshet
+- [ ] Pendragon - The Masquerade Overture
+- [ ] Tangerine Dream - Phaedra
+- [ ] Big Big Train - The Underfall Yard
+- [ ] Cardiacs - Sing to God
+- [ ] Le Orme - Felone e Sorona 
+- [ ] Henry Cow - In Praise of Learning
+- [ ] Cardiacs - A Little Man and a House and the Whole World Window
+- [ ] Stratus Luna - Stratus Luna
+- [ ] Utopia - Todd Rundgren's Utopia
+- [ ] The Dear Hunter - Act IV: Rebirth on Reprise
+- [ ] The Flower Kings - Stardust We Are
+- [ ] Anthony Phillips - The Geese & the Ghost
+- [ ] Tony Banks - A Curious Feeling
+- [ ] Jean Cohen-Solal - Captain Tarthopom
+- [ ] Patrick Moraz - The Story of I
+- [ ] John Greaves & Peter Blegvad - Kew. Rhone.
+- [ ] Hatfield and the North - The Rotters Club
+- [ ] Scardust - Strangers
+- [ ] Traffic - John Barleycorn Must Die
+- [ ] Franco Battiato - Sulle di corde aries
+- [ ] Reegonetti Band - Exploring the Unknown
+- [ ] Transatlantic - The Whirlwind
+- [ ] The Move - Looking on
+- [ ] The Gourishankar - 2nd Hands
+- [ ] Universal Totem Orchestra - Mathematical Mother
+- [ ] Supertramp - Even in the Quietest Moments
+- [ ] However - Sudden Dusk
+- [ ] Fields - Fields
+- [ ] Il Balletto di Bronzo - Ys
+- [ ] National Health - Of Queues and Cures
+- [ ] Family - Music in a Doll's House
+- [ ] Zomby - Riding on a Tear
+- [ ] Omega - 200 Years After the Last War
+- [ ] Traffic - The Low Spark of High Heeled Boys
+- [ ] Jade Warrior - Released
+- [ ] Steven Wilson - Grace for Drowning
+- [ ] Nemo - Coma
+- [ ] Orphaned Land - Mabool
+- [ ] Steve Howe - The Steve Howe Album
+- [ ] Koenjihyakkei - Viva kienji!
+- [ ] Coheed and Cambria - Good Apollo, I'm Burning Star IV, Volume One
+- [ ] Curved Air - Second Album
+- [ ] Mike Oldfield - Ommadawn
+- [ ] P.L.J. Band - Armageddon
+- [ ] Tiger Moth Tales - Cocoon
+- [ ] Subterranean Masquerade - The Great Bazaar
+- [ ] Amon Düül II - Yeti
+- [ ] Ünder Linden - Escacious Imtermedios
+- [ ] The Neal Morse Band - The Similitude of a Dream
+- [ ]  COMPASS - Our Time on Earth
+- [ ] Jean-Michel Jarre - Oxygene
+- [ ] Moving Gelatin Plates - The World of Genius Hans
+- [ ] Sebastian Hardie - Windchase
+- [ ] Storm Corrosion - Storm Corrosion
+- [ ] Calliope - La terra dei grandi occhi
+- [ ] Family - Fearless
+- [ ] Rare Bird - Rare Bird
+- [ ] Mike Oldfield - Tubular Bells III
+- [ ] Genesis - Wind and Wuthering
+- [ ] Yezda - Sacred Baboon
+- [ ] IQ - Ever
+- [ ] Devin Townsend - Deconstruction
+- [ ] Kayo Dot - Hubardo
+- [ ] Mother Turtle - Zea Mice
+- [ ] IQ - Frequency
+- [ ] Koenjihyakkei - Dhorimviskha
+- [ ] National Health - National Health
+- [ ] The Emerald Dawn - Searching for the Lost Key
+- [ ] Koenjihyakkei - Nivraym
+- [ ] Pedal Giant Animals - Pedal Giant Animals
+- [ ] Carmen - Fandangos in Space
+- [ ] Wigwam - Fairyport
+- [ ] Aquaserge - A l'amitie
+- [ ] Purcupine Tree - The Incident
+- [ ] Le Orme - Collage
+- [ ] Pope Francis - Wake Up!
+- [ ] Project - Name Stolen
+- [ ] Captain Beefheart & His Magic Band - Trout Mask Replica
+- [ ] The Flower Kings - Space Revolver
+- [ ] The Can - Monster Movie
+- [ ] Triumvirat - Spartacus
+- [ ] Genesis - Nursery Cryme
