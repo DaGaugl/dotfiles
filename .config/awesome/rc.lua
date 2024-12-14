@@ -317,8 +317,8 @@ globalkeys = gears.table.join(
 
     -- firefox
     awful.key({ modkey },            "i",     function ()
-    awful.util.spawn("floorp") end,
-              {description = "floorp", group = "launcher"}),
+    awful.util.spawn("zen-browser") end,
+              {description = "browser", group = "launcher"}),
 
     -- emacs
     awful.key({ modkey, "Shift" }, "e",      function ()
@@ -337,8 +337,8 @@ globalkeys = gears.table.join(
 
     -- pcmanfm
     awful.key({ modkey },       "e",        function()
-    awful.util.spawn("pcmanfm") end,
-            {description = "pcmanfm", group = "launcher"}),
+    awful.util.spawn("thunar") end,
+            {description = "thunar", group = "launcher"}),
 
     -- rofi emoji
     awful.key({ modkey, "Shift" },       "m",        function()
@@ -363,6 +363,18 @@ globalkeys = gears.table.join(
     awful.key({  },"XF86AudioPlay" , function()
     awful.util.spawn("playerctl -p spotify play-pause") end,
             {description = "play/pause spotify", group = "client"}),
+
+    awful.key({  },"Print" , function()
+    awful.util.spawn("mutemic") end,
+            {description = "mute microphone", group = "client"}),
+
+    awful.key({ "Shift"  },"Print" , function()
+    awful.util.spawn("mutemic") end,
+            {description = "mute microphone", group = "client"}),
+
+    awful.key({ modkey  },"XF86AudioPlay" , function()
+    awful.util.spawn("mutemic") end,
+            {description = "mute microphone", group = "client"}),
 
     awful.key({ modkey }, "a", function()
     awful.util.spawn("change-audio") end,
@@ -619,11 +631,12 @@ awful.spawn.with_shell("rofi-polkit-agent")
 awful.spawn.with_shell("killall volumeicon")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("spotify")
---awful.spawn.with_shell("chatterino")
+awful.spawn.with_shell("chatterino")
 awful.spawn.with_shell("sleep 2 && volumeicon")
 awful.spawn.with_shell("dunst")
-awful.spawn.with_shell("thunderbird")
+--awful.spawn.with_shell("thunderbird")
 awful.spawn.with_shell("alttab -w 1 -d 1")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("unclutter")
-
+awful.spawn.with_shell("vesktop")
+awful.spawn.with_shell("steam")

@@ -47,7 +47,8 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a, %d %b, %H:%M}"
+        "format": "{:%a, %d %b, %H:%M}",
+        "on-click": "swaync-client -t -sw"
     },
 
     
@@ -59,7 +60,7 @@
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "   {volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
