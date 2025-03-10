@@ -61,12 +61,12 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.tile,
+    awful.layout.suit.fair,
     awful.layout.suit.floating,
 --    awful.layout.suit.tile.left,
 --    awful.layout.suit.tile.bottom,
 --    awful.layout.suit.tile.top,
---    awful.layout.suit.fair,
+    awful.layout.suit.tiling,
 --    awful.layout.suit.fair.horizontal,
 --    awful.layout.suit.spiral,
 --    awful.layout.suit.spiral.dwindle,
@@ -363,6 +363,14 @@ globalkeys = gears.table.join(
     awful.key({  },"XF86AudioPlay" , function()
     awful.util.spawn("playerctl -p spotify play-pause") end,
             {description = "play/pause spotify", group = "client"}),
+  
+    awful.key({  }, "XF86AudioNext" , function()
+    awful.util.spawn ("playerctl -p spotify next") end,
+            {descroption = "next spotify song", group = "client"}),
+
+    awful.key({  }, "XF86AudioPrev" , function()
+    awful.util.spawn ("playerctl -p spotify previous") end,
+            {descroption = "previous spotify song", group = "client"}),
 
     awful.key({  },"Print" , function()
     awful.util.spawn("mutemic") end,
@@ -626,7 +634,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- autostart
-awful.spawn.with_shell("xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 2560x455 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --rate 164.80 --pos 0x0 --rotate normal --output DP-5 --off")
+awful.spawn.with_shell("xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 2560x300 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --rate 164.80 --pos 0x0 --rotate normal --output DP-5 --off")
 awful.spawn.with_shell("rofi-polkit-agent")
 awful.spawn.with_shell("killall volumeicon")
 awful.spawn.with_shell("picom")
@@ -640,3 +648,13 @@ awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("unclutter")
 awful.spawn.with_shell("vesktop")
 awful.spawn.with_shell("steam")
+
+
+
+-- Enable sloppy focus, so that focus follows mouse.
+--client.connect_signal("mouse::enter", function(c)
+--    c:emit_signal("request::activate", "mouse_enter", {raise = false})
+--end)
+
+--client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+--client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
