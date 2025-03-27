@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Define your list of options with display names and corresponding file paths/URLs.
+declare -A options
+options=(
+  ["Jazz"]="http://79.120.77.11:8000/jazz.m3u"
+  ["Progressive Rock (Radio Caprice)"]="http://79.111.119.111:8000/progressiverock.m3u"
+  ["Progressive Rock (Prog Radio)"]="https://streamer.radio.co/s95a101d27/listen"
+  ["Symphony"]="http://79.111.14.76:8000/symphony.m3u"
+  ["RPI (Rock Progressivo Italiano)"]="http://79.111.14.76:8000/rpi.m3u"
+  ["Rock&Roll"]="http://play.rockantenne.de/rockandroll.m3u"
+  ["Blues Rock"]="http://79.120.39.202:8000/bluesrock.m3u"
+)
+
+# Combine the display names into a single string separated by newlines for dmenu.
+menu_items=$(printf "%s\n" "${!options[@]}")
+
+# Show the dmenu prompt and capture the user's choice.
+choice=$(echo -e "$menu_items" | dmenu -i -p ":3")
+
+# If a choice is made, open the corresponding file path/URL with mpv.
+if [[ -n "$choice" ]]; then
+  mpv --force-window "${options[$choice]}"
+else
+  exit 1
+fi
+
+
+# MADE WITH CHATGPT BECAUSE IM RETARDED

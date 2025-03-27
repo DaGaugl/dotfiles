@@ -1,0 +1,18 @@
+#!/bin/sh
+
+pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+muted=$(pactl get-source-mute @DEFAULT_SOURCE@);
+
+if [ "$muted" == "Mute: yes" ];
+then
+
+play -v 0.1 ~/Music/mute.wav
+
+else
+
+play -v 0.1 ~/Music/unmute.wav;
+
+fi
+
+# MADE BY MY GOOD FRIEND HOTBEAR

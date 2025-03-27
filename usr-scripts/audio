@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Function to get the current default sink
+get_default_sink() {
+  pactl info | grep "Default Sink" | awk '{print $3}'
+}
+
+# Function to list available sinks
+list_sinks() {
+  pactl list short sinks | awk '{print $2}'
+}
+
+# Function to set the default sink
+set_default_sink() {
+  local sink_name=$1
+  pactl set-default-sink "$sink_name"
+  # Move all currently playing audio streams to the new sink
+  for stream in $(pactl list short sink-inputs | awk '{print $1}'); do
+    pactl move-sink-input "$stream" "$sink_name"
+  done
+}
+
+# Main script
+HEADSET_NAME="alsa_output.usb-SteelSeries_SteelSeries_Arctis_7-00.stereo-game"  # Replace with your headset sink name
+SPEAKER_NAME="alsa_output.pci-0000_00_1f.3.analog-stereo" # Replace with your speaker sink name
+
+# Get the current default sink
+current_sink=$(get_default_sink)
+
+if [[ "$current_sink" == "$HEADSET_NAME" ]]; then
+  echo "Currently using headset. Switching to speaker."
+  set_default_sink "$SPEAKER_NAME"
+elif [[ "$current_sink" == "$SPEAKER_NAME" ]]; then
+  echo "Currently using speaker. Switching to headset."
+  set_default_sink "$HEADSET_NAME"
+else
+  echo "Unknown default sink: $current_sink"
+  echo "Available sinks:"
+  list_sinks
+  echo "Please update the script with the correct sink names."
+fi
+
+
+# MADE WITH CHATGPT BECAUSE IM RETARDED
