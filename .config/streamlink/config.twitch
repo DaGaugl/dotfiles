@@ -2,6 +2,6 @@ player=mpv
 twitch-low-latency
 twitch-disable-ads
 hls-live-edge 1
-hls-segment-threads 2
+stream-segment-threads 2
 title {title}
-twitch-proxy-playlist=https://lb-eu.cdn-perfprod.com
+twitch-proxy-playlist=https://luminous.alienpls.org

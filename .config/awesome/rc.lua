@@ -366,11 +366,23 @@ globalkeys = gears.table.join(
   
     awful.key({  }, "XF86AudioNext" , function()
     awful.util.spawn ("playerctl -p spotify next") end,
-            {descroption = "next spotify song", group = "client"}),
+            {description = "next spotify song", group = "client"}),
 
     awful.key({  }, "XF86AudioPrev" , function()
     awful.util.spawn ("playerctl -p spotify previous") end,
-            {descroption = "previous spotify song", group = "client"}),
+            {description = "previous spotify song", group = "client"}),
+
+    awful.key({ modkey }, "XF86AudioRaiseVolume" , function()
+    awful.util.spawn ("playerctl -p mpv volume 0.05+") end,
+            {description = "mpv increase volume", group = "client"}),
+
+    awful.key({ modkey }, "XF86AudioLowerVolume" , function()
+    awful.util.spawn ("playerctl -p mpv volume 0.05-") end,
+            {description = "mpv decrease volume", group = "client"}),
+
+    awful.key({ modkey, "Shift" }, "XF86AudioLowerVolume" , function()
+    awful.util.spawn ("playerctl -p mpv volume 0.0") end,
+            {description = "mpv mute", group = "client"}),
 
     awful.key({  },"Print" , function()
     awful.util.spawn("mutemic") end,
@@ -385,8 +397,12 @@ globalkeys = gears.table.join(
             {description = "mute microphone", group = "client"}),
 
     awful.key({ modkey }, "a", function()
-    awful.util.spawn("change-audio") end,
+    awful.util.spawn("audio") end,
             {description = "change audio output", group = client}),
+
+    awful.key({ modkey }, "q", function()
+    awful.util.spawn("internet-radio") end,
+            {description = "choose internet radio", group = client}),
     -- power menu
     awful.key({ modkey, "Control" }, "s", function()
     awful.util.spawn("rofi -show power-menu -modi power-menu:rofi-power-menu") end,
