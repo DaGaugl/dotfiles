@@ -1,0 +1,2 @@
+#!/bin/bash
+hyprshot -m region --freeze --raw | satty --filename - --output-filename ~/Pictures/Screenshots/screenshot-$(date '+%Y%m%d-%H:%M:%S').png

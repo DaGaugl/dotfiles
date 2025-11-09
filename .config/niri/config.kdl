@@ -111,7 +111,7 @@ output "DP-3" {
     // automatically.
     position x=0 y=0
     focus-at-startup
-    //variable-refresh-rate
+    variable-refresh-rate on-demand=true
 }
 
 output "HDMI-A-1" {
@@ -121,19 +121,12 @@ output "HDMI-A-1" {
     position x=2560 y=300
 }
 
-//output "HDMA-A-1" {
-//  mode 1920x1080@60
-//  scale 1
-//  transform "normal"
-//  position x=2560 y=300
-//}
-
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 5
+    gaps 10
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -294,11 +287,12 @@ layout {
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
  spawn-sh-at-startup "qs -c noctalia-shell"
- spawn-at-startup "zen-browser"
  spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
- spawn-at-startup "feishin"
+ spawn-at-startup "zen-browser"
  spawn-at-startup "vesktop"
  spawn-sh-at-startup "nm-applet"
+ spawn-at-startup "feishin"
+ spawn-at-startup "niriswitcher"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -396,11 +390,13 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+E { spawn "dolphin"; }
     Mod+Alt+S { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
-    Mod+Shift+Control+S { spawn-sh "hyprshot -m region"; }
+    Mod+Shift+Control+S { spawn-sh "/home/master/.config/niri/screenshot"; }
     Mod+Shift+S { spawn-sh "flameshot gui --clipboard"; }
     Print { spawn-sh "mutemic"; }
     Mod+a { spawn-sh "audio"; }
     Mod+Shift+K { spawn-sh "kpl"; }
+    Alt+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
+
 //    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
 //    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
@@ -638,7 +634,7 @@ binds {
 
     //Print { screenshot; }
     //Ctrl+Print { screenshot-screen; }
-    //Alt+Print { screenshot-window; }
+    Alt+Print { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
@@ -661,7 +657,6 @@ binds {
 
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
-    HYPRSHOT_DIR "/home/master/Pictures/Screenshots/"
     QT_QPA_PLATFORM "wayland"
 }
 
